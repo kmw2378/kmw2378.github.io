@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>백엔드 개발자 포트폴리오</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            font-size: 1.1rem;
+        }
+        .container {
+            width: 80%;
+            margin: 2rem auto;
+        }
+        .profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem 0;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .profile img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-bottom: 1rem;
+        }
+        .profile h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+        .profile p {
+            font-size: 1rem;
+            color: #666;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        h2.section-title {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #333;
+            padding-bottom: 0.5rem;
+        }
+        .skills, .projects, .experience, .contact {
+            background-color: #fff;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        ul {
+            list-style: none;
+        }
+        ul li {
+            padding: 0.5rem 0;
+        }
+        ul li i {
+            color: #333;
+            margin-right: 0.5rem;
+        }
+        .projects ul li {
+            margin-bottom: 1rem;
+        }
+        .projects ul li h3 {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 0.3rem;
+        }
+        .projects ul li p {
+            font-size: 0.9rem;
+            color: #555;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact form input, .contact form textarea {
+            padding: 0.7rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .contact form button {
+            padding: 0.7rem;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .contact form button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>백엔드 개발자 포트폴리오</h1>
+    <p>성장하고 있는 백엔드 개발자, [당신의 이름]</p>
+</header>
+
+<div class="container">
+    <div class="profile">
+        <img src="https://via.placeholder.com/150" alt="Profile Picture">
+        <h2>[당신의 이름]</h2>
+        <p>백엔드 개발자 | Java, Spring, RESTful API, MySQL</p>
+    </div>
+
+    <section class="skills">
+        <h2 class="section-title">스킬</h2>
+        <ul>
+            <li><i class="fas fa-check"></i> Java, Spring Framework</li>
+            <li><i class="fas fa-check"></i> RESTful API 설계 및 개발</li>
+            <li><i class="fas fa-check"></i> 데이터베이스: MySQL, Redis</li>
+            <li><i class="fas fa-check"></i> 클라우드: AWS, Docker</li>
+            <li><i class="fas fa-check"></i> Git, CI/CD</li>
+        </ul>
+    </section>
+
+    <section class="projects">
+        <h2 class="section-title">프로젝트</h2>
+        <ul>
+            <li>
+                <h3>프로젝트 1: [프로젝트 이름]</h3>
+                <p>설명: [프로젝트에 대한 간략한 설명]</p>
+                <p>기술 스택: Java, Spring, MySQL</p>
+            </li>
+            <li>
+                <h3>프로젝트 2: [프로젝트 이름]</h3>
+                <p>설명: [프로젝트에 대한 간략한 설명]</p>
+                <p>기술 스택: AWS, Docker, Redis</p>
+            </li>
+        </ul>
+    </section>
+
+    <section class="experience">
+        <h2 class="section-title">경력</h2>
+        <ul>
+            <li><i class="fas fa-briefcase"></i> 회사 이름, 직책 (기간)</li>
+            <li><i class="fas fa-briefcase"></i> 회사 이름, 직책 (기간)</li>
+        </ul>
+    </section>
+
+    <section class="contact">
+        <h2 class="section-title">연락하기</h2>
+        <form action="#" method="POST">
+            <input type="text" name="name" placeholder="이름" required>
+            <input type="email" name="email" placeholder="이메일" required>
+            <textarea name="message" placeholder="메시지를 입력하세요" required></textarea>
+            <button type="submit">보내기</button>
+        </form>
+    </section>
+</div>
+
+</body>
+</html>
